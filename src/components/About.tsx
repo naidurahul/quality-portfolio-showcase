@@ -1,6 +1,7 @@
+
 import { CheckCircle } from "lucide-react";
 export const About = () => {
-  const skills = ["Selenium WebDriver", "Cypress", "Playwright", "Appium", "API Testing", "CI/CD Integration", "Test Automation Frameworks", "Performance Testing", "Jenkins", "JIRA & Test Management Tools"];
+  const skills = ["Playwright", "Jira", "Performance Testing", "API Testing", "Test Automation", "CI/CD Integration"];
   return <section id="about" className="section-padding bg-secondary/50">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-16">
