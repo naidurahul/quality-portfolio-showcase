@@ -1,22 +1,7 @@
-
 import { CheckCircle } from "lucide-react";
-
 export const About = () => {
-  const skills = [
-    "Selenium WebDriver",
-    "Cypress",
-    "Playwright",
-    "Appium",
-    "API Testing",
-    "CI/CD Integration",
-    "Test Automation Frameworks",
-    "Performance Testing",
-    "Jenkins",
-    "JIRA & Test Management Tools"
-  ];
-
-  return (
-    <section id="about" className="section-padding bg-secondary/50">
+  const skills = ["Selenium WebDriver", "Cypress", "Playwright", "Appium", "API Testing", "CI/CD Integration", "Test Automation Frameworks", "Performance Testing", "Jenkins", "JIRA & Test Management Tools"];
+  return <section id="about" className="section-padding bg-secondary/50">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
@@ -44,11 +29,11 @@ export const About = () => {
               <div className="space-y-3">
                 <div className="flex flex-col">
                   <span className="font-medium">Bachelor of Science in Computer Science</span>
-                  <span className="text-muted-foreground">University Name, 2015-2019</span>
+                  <span className="text-muted-foreground">2022</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-medium">ISTQB Certified Test Automation Engineer</span>
-                  <span className="text-muted-foreground">2020</span>
+                  
+                  
                 </div>
               </div>
             </div>
@@ -58,17 +43,14 @@ export const About = () => {
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
               <h3 className="text-xl font-bold mb-6">Technical Skills</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {skills.map((skill, index) => (
-                  <div key={index} className="flex items-center gap-2">
+                {skills.map((skill, index) => <div key={index} className="flex items-center gap-2">
                     <CheckCircle className="h-5 w-5 text-primary" />
                     <span>{skill}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
